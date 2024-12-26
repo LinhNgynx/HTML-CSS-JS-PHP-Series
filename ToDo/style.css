@@ -1,0 +1,17 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    max-width: 500px;
+}
+.addForm{
+    display: flex;
+    flex-direction: column;
+}
+.crossed {
+    text-decoration: line-through;
+    opacity: 0.6; /* Optional: Make text appear faded */
+    color: gray; /* Optional: Change text color */
+}
