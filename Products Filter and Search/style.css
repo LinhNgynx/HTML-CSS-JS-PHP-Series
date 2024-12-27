@@ -1,11 +1,11 @@
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* Body Styling */
+ 
   body {
     font-family: "Roboto", Arial, sans-serif;
     background-color: #cedeed;
@@ -14,14 +14,14 @@
     padding: 20px 0;
   }
   
-  /* Container */
+
   .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
   }
   
-  /* Header Section */
+ 
   #form {
     display: flex;
     justify-content: center;
