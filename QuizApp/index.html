@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzes</title>
+    <link href="style.css" rel="stylesheet">
+    <script type ="module" src="script.js"></script>
+</head>
+
+<body>
+    <div class="middle-element">
+        <div class="quiz-element" id="quiz-element">
+            <h2>Quiz Configuration</h2>
+            <form id="form-select">
+                <h4>Select Category</h4>
+                <input type="hidden" id="category" name="category">
+                <div class="answer-section">
+                    <button class="category-btn" type="button">Programming</button>
+                    <button class="category-btn" type="button">Math</button>
+                    <button class="category-btn" type="button">Science</button>
+                </div>
+                <h4>Number of Question</h4>
+                <input type="hidden" id="question-number" name="question-number">
+                <div class="number-section">
+                    <button class="number-btn" type="button">5</button>
+                    <button class="number-btn" type="button">10</button>
+                    <button class="number-btn" type="button">15</button>
+                    <button class="number-btn" type="button">20</button>
+                    <button class="number-btn" type="button">25</button>
+                </div>
+                <button type="submit">Start Quiz</button>
+            </form>
+        </div>
+        <div id="question-element">
+        </div>
+    </div>
+</body>
+
+</html>
