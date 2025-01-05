@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlashCard</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="center-element">
+        <div class="button-add-section">
+            <button id="add-card">Add Flash Card</button>
+        </div>
+        <div id="add-modal" class="hidden">
+            <h2>Add Flash Card</h2>
+            <form id="form-add">
+                <label for="question">Question</label>
+                <input id="question" name="question" type="text" placeholder="Type question here..." required>
+                <label for="answer">Answer</label>
+                <input id="answer" name="answer" type="text" placeholder="Type answer here..." required>
+                <div class="button-section">
+                    <button type="submit">Save</button>
+                    <button type="button" id="cancel-btn">Cancel</button>
+                </div>
+            </form>
+        </div>
+        <div id="card-section"></div>
+    </div>
+</body>
+
+</html>
