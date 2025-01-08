@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Quote Component */
+.quote-elem {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+}
+
+.quote-elem h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+#quote-text {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+#author-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn-component {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.left-btn,
+.right-btn {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button i {
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #003f7f;
+}
+
+/* Icons */
+i {
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .quote-elem {
+        padding: 20px;
+    }
+
+    #quote-text {
+        font-size: 18px;
+    }
+
+    #author-text {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+}
