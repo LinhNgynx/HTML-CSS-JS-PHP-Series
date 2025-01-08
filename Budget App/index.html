@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-section">
+                <header>Budget</header>
+                <form class="budget-form">
+                    <input type="number" id="budget-amount" placeholder="Enter total amount..." required>
+                    <button type="submit">Set Budget</button>
+                </form>
+            </div>
+            <div class="form-section">
+                <header>Expense</header>
+                <form class="expense-form">
+                    <input type="text" id="product-title" placeholder="Enter Title of Product..." required>
+                    <input type="number" id="product-cost" placeholder="Enter Cost of Product..." required>
+                    <button type="submit">Add Expense</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="statistics">
+            <div class="stat">
+                <p>Total Budget</p>
+                <p class="budget-number">0</p>
+            </div>
+            <div class="stat">
+                <p>Total Expense</p>
+                <p class="expense-number">0</p>
+            </div>
+            <div class="stat">
+                <p>Balance</p>
+                <p class="balance-number">0</p>
+            </div>
+        </div>
+
+        <div class="expense-list-section">
+            <header>Expense List</header>
+            <div class="expense-list"></div>
+        </div>
+    </div>
+
+    <div class="modal-overlay">
+        <div class="modal"></div>
+    </div>
+</body>
+</html>
