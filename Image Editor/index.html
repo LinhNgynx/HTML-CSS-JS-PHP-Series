@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="middle-component">
+        <div class="image-editor">
+            <header>Image Editor</header>
+            <div class="body-content">
+                <div class="option-section">
+                    <div class="filter-btn-section">
+                        <header>Filters</header>
+                        <div class="filter-btns">
+                            <button class="filter-btn">Brightness</button>
+                            <button class="filter-btn">Saturation</button>
+                            <button class="filter-btn">Inversion</button>
+                            <button class="filter-btn">Grayscale</button>
+                        </div>
+                    </div>
+                    <div class="filter-select-section">
+                        <p id="filter-header"></p>
+                        <p id="filter-value"></p>
+                        <input type="range" id="range-value" name="range-value" min="0" max="200">
+                    </div>
+                    <div class="rotate-n-flip-section">
+                        <header>Rotate & Flip</header>
+                        <button class="rotate-left"><i class="fa fa-rotate-left"></i></button>
+                        <button class="rotate-right"><i class="fa fa-rotate-right"></i></button>
+                        <button class="arrows-h"> <i class="fa fa-arrows-h"></i></button>
+                        <button class="arrows-v"> <i class="fa fa-arrows-v"></i></button>
+                    </div>
+                </div>
+                <div class="image-section">
+                    <img id="image-to-edit" src="https://via.placeholder.com/200" alt="Sample Image">
+                </div>
+            </div>
+            <div class="footer-options">
+                <div class="footer-left-align">
+                    <button class="reset-filter-btn">RESET FILTERS</button>
+                </div>
+                <div class="footer-right-align">
+                    <input type="file" id="fileInput" accept="image/*" style="display: none;">
+                    <button class="choose-image-btn">CHOOSE IMAGE</button>
+                    <button class="save-image-btn" disabled>SAVE IMAGE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
