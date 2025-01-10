@@ -3,6 +3,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
     color: #333;
+    height: 100vh;
 }
 
 .middle-component {
@@ -20,7 +21,10 @@ header {
     color: #4CAF50;
     margin-bottom: 15px;
 }
-
+.body-content{
+    display: flex;
+    gap: 20px;
+}
 .filter-btns button,
 .rotate-n-flip-section button,
 .reset-filter-btn,
