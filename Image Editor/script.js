@@ -62,11 +62,35 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   
     const saveImage = () => {
+      const canvas = document.createElement("canvas");
+      const ctx = canvas.getContext("2d");
+      canvas.width = imageToEdit.width;
+      canvas.height = imageToEdit.height;
+  
+      ctx.save();
+      ctx.translate(canvas.width / 2, canvas.height / 2);
+      ctx.scale(currentFlipX, currentFlipY);
+      ctx.rotate((currentRotation * Math.PI) / 180);
+      ctx.drawImage(
+          imageToEdit,
+          -canvas.width / 2,
+          -canvas.height / 2,
+          canvas.width,
+          canvas.height
+      );
+      ctx.restore();
+  
+      ctx.filter = combineFilters
+          .map(filter => `${filter.cssFilter}(${filter.amount}%)`)
+          .join(" ");
+      ctx.drawImage(imageToEdit, 0, 0, canvas.width, canvas.height);
+  
       const link = document.createElement("a");
-      link.href = imageToEdit.src;
+      link.href = canvas.toDataURL("image/png");
       link.download = "edited-image.png";
       link.click();
-    };
+  };
+  
   
     const resetFilters = () => {
       combineFilters[0].amount=100;
