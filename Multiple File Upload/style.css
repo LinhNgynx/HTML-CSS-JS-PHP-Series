@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.middle-element {
+    width: 400px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.file-uploader header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.drag-n-browse-section {
+    border: 2px dashed #007bff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #555;
+}
+
+.drag-n-browse-section p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.drag-n-browse-section a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.drag-over {
+    border-color: #0056b3;
+    background-color: #e7f3ff;
+}
+
+.file-list {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.file-item {
+    background: #f9f9f9;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+.file-item.completed {
+    background: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.progress-bar {
+    background: #f4f4f4;
+    height: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    background: #007bff;
+    width: 0%;
+    transition: width 0.2s;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+}
+
+.cancel-btn,
+.resume-btn {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.cancel-btn {
+    background: #dc3545;
+}
+
+.resume-btn {
+    background: #28a745;
+}
