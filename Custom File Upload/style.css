@@ -21,8 +21,8 @@ body {
 }
 
 .center-element.drag-over {
-    border-color: #4caf50;
-    background-color: #f0fff4;
+    border-color: #51a154;
+    background-color: #f3f8f4;
     box-shadow: 0px 6px 12px rgba(0, 128, 0, 0.2);
 }
 

@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
         event.preventDefault();
         dropZone.classList.remove("drag-over");
         const files = event.dataTransfer.files;
-        fileInput.files = files; // Assign dropped files to input
+        fileInput.files = files; 
         updateFileName(files);
     };
 
