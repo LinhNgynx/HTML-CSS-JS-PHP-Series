@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom File Input</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="center-element" id="drop-zone">
+        <input type="file" id="choose-file-input" hidden multiple aria-labelledby="choose-file-btn">
+        <div class="btn-section">
+            <button id="choose-file-btn" aria-label="Choose files">Choose files</button>
+        </div>
+        <div class="file-name" aria-live="polite">No file chosen</div>
+    </div>
+</body>
+</html>

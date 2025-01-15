@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 clearInterval(interval);
                 onComplete();
             }
-        }, 700); 
+        }, 500); 
     };
 
     const displayFiles = (files) => {
