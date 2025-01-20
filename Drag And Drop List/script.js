@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   cards.forEach((card) => {
     const cardDiv = document.createElement("div");
     cardDiv.classList.add("card");
-    cardDiv.setAttribute("draggable", "true"); // Enable dragging
+    cardDiv.setAttribute("draggable", "true"); 
 
     const cardImage = document.createElement("img");
     cardImage.src = card.img;
@@ -26,9 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Drag-over behavior for the drop zone
   const handleDragOver = (e) => {
-    e.preventDefault(); // Allow drop
+    e.preventDefault(); 
     e.target.classList.add("drag-over");
   };
 
@@ -47,7 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log(`Dropped card: ${data}`);
   };
 
-  // Attach drop-zone event listeners
   theList.addEventListener("dragover", handleDragOver);
   theList.addEventListener("dragenter", handleDragEnter);
   theList.addEventListener("dragleave", handleDragLeave);
